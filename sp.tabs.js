@@ -91,7 +91,7 @@ var SPTabs = function(tabs) {
 
                 jQuery('.tabs li a').on('click', function(e) {
 
-                    var currentIndex = jQuery(this).attr('href').replace("#", "");
+                    var currentIndex = getTabId(jQuery(this).attr('href'));
                     showTabControls(currentIndex);
 
                     //e.preventDefault();
@@ -115,11 +115,15 @@ var SPTabs = function(tabs) {
 
                 var startIndex = 0;
                 if (/tab\d/.test(location.hash))
-                    startIndex = location.hash.match(/tab\d/)[0].match(/\d/)[0];
+                    startIndex = getTabId(location.hash);
 
                 showTabControls(startIndex >= 0 && startIndex < tabsObj.length ? startIndex : 0);
             });
         }
+    }
+
+    function getTabId(idString) {
+        return idString.match(/tab\d/)[0].match(/\d/)[0];
     }
 
     function showTabControls(index) {
