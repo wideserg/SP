@@ -84,7 +84,7 @@ var SPTabs = function(tabs) {
                 for (var i = 0; i < tabsObj.length; i++) {
 
                     var tabName = tabsObj[i][0];
-                    tabsHTML += String.format("<li class='{0}'><a href='#{1}'>{0}</a></li>", tabName, i);
+                    tabsHTML += String.format("<li class='{0}'><a href='#tab{1}'>{0}</a></li>", tabName, i);
                 }
 
                 jQuery("#" + window.currentFormWebPartId).prepend(String.format("<ul class='tabs'>{0}</ul>", tabsHTML));
