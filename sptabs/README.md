@@ -24,7 +24,7 @@ For example, to open second tab on `DispForm` use:
 ![Alt text](../_promo/sptabs/view-sample.gif "sptabs sample") 
 
 
-#### Support
+#### Browser support
 Tested under:
 * IE8+
 * Chrome
