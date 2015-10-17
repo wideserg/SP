@@ -4,7 +4,7 @@
 * Quick, based on CSS rules;
 * No external dependencies.
 
-#### Usage smaple:
+#### Usage sample:
 
 	SPTabs([
 		["General", ["Title", "country", "location_type", "col1"]],
