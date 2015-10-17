@@ -1,4 +1,5 @@
-# Simple js tools to group SharePoint fields by tabs on item forms. 
+# SPTabs
+### Simple js tools to group SharePoint fields by tabs on item forms
 
 * Quick, based on CSS rules;
 * No external dependencies.
