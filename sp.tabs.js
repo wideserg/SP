@@ -32,6 +32,13 @@ var SPTabs = function(tabs) {
     .ms-formtable tr { display: none; }\
     .ms-formbody tr { display: initial;}';
 
+    var activeTabStyleFormat = ".tabs > li.{0} > a, .tabs > li.{0} > a:hover, .tabs > li.{0} > a:focus {{\
+                                            color: #555;\
+                                            background-color: #fff;\
+                                            border: 1px solid #ddd;\
+                                            border-bottom-color: transparent;\
+                                            cursor: default;\
+                                            }}";
 
     var vanila = v = (function(o) {
 
@@ -199,13 +206,7 @@ var SPTabs = function(tabs) {
         var tabClassName = tabsObj[index][0];
         var id = "showscript";
         var fieldsStyles = String.format("#{0} .ms-formtable tr.{1} {{ display: inline; }} ", window.currentFormWebPartId, tabClassName);
-        var headerStyles = String.format(".tabs > li.{0} > a, .tabs > li.{0} > a:hover, .tabs > li.{0} > a:focus {{\
-                                            color: #555;\
-                                            background-color: #fff;\
-                                            border: 1px solid #ddd;\
-                                            border-bottom-color: transparent;\
-                                            cursor: default;\
-                                            }}", tabClassName);
+        var headerStyles = String.format(activeTabStyleFormat, tabClassName);
 
         v.addCss(fieldsStyles + headerStyles, id);
     }
