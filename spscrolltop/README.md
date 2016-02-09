@@ -9,7 +9,7 @@
 	
 	//settings sample with default values
 	{
-        showOn: 200, //height in **px** from top of window, indicates when to start showing scroll
+        showOn: 200, //height in __px__ from top of window, indicates when to start showing scroll
         speed: 800, //scroll speed
         bgColor: 'gray', //color of link rectangle
         textColor: 'white', //text color
