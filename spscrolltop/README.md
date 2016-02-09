@@ -18,6 +18,7 @@
         opacity: 0.5 //scroll rectangle opacity
     };
 
+![Alt text](../_promo/spscrolltop/sample.png "spscrolltop sample") 
 
 #### Browser support
 Tested under:
