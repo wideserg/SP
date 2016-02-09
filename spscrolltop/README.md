@@ -7,7 +7,8 @@
 
 	SPScrollTop(settings);
 	
-	/*defaultSettings = {
+	//default settings
+	{
         showOn: 200,
         speed: 800,
         bgColor: 'gray',
@@ -15,7 +16,7 @@
         useThemColor: true,
         text: "Top ^",
         opacity: 0.5
-    };*/
+    };
 
 
 #### Browser support
