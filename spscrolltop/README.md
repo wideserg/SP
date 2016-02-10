@@ -20,6 +20,11 @@
 
 ![Alt text](../_promo/spscrolltop/sample.png "spscrolltop sample") 
 
+#### SP support
+Tested under:
+* SP2013 On-Premise
+* O365
+
 #### Browser support
 Tested under:
 * IE8+
